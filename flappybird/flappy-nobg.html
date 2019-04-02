@@ -1,0 +1,30 @@
+<!DOCTYPEhtml>
+<html>
+<head>
+<metacharset="utf-8">
+<title>LoopityLoop</title>
+
+</head>
+<body>
+	<canvas id="mycanvas" width="600" height="600";  style="border: solid black 1px"></canvas>
+	<script>
+		var ds = document.getElementById("mycanvas");
+		var cx = ds.getContext("2d");
+
+		var img = new Image();
+		img.src = "flappy-bird.png";
+
+		var spriteW = 75 , spriteH = 50;
+		img.onload = function () {
+		var cycle = 0;
+		setInterval ( function () {
+			//cx.clearRect (0 , 0 , spriteW , spriteH ) ;
+			cx.drawImage ( img , cycle * spriteW , 0 , spriteW , spriteH ,0, 0 , spriteW , spriteH ) ;
+			cycle = ( cycle + 1) % 8;
+		}, 120) ;
+	} ;
+	
+	
+	</script>
+</body>
+</html>

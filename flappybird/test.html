@@ -1,0 +1,31 @@
+<!DOCTYPEhtml>
+<html>
+<head>
+<metacharset="utf-8">
+<title>Flapping of the Bird</title>
+
+</head>
+<body>
+	<canvas id="mycanvas" width="300" height="200";  style="border: solid black 1px"></canvas>
+	<script>
+		var ds = document.getElementById("mycanvas");
+		var cx = ds.getContext("2d");
+
+		var bg = new Image();
+		bg.src = "city300.png";
+
+		var img = new Image();
+		img.src = "flappy-bird.png";
+
+		
+		img.onload = function () {
+			cx.drawImage(bg, 0, 0);
+			cx.drawImage(img, 0,0,300,50, 10, 10, 300,50);
+
+		}
+	
+	
+	</script>
+</body>
+</html>
+
