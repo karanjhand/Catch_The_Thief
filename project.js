@@ -9,7 +9,7 @@ var bh = 500;
 var running;
 var caughtThief = false;
 var th=new Image();
-th.src = "RITEAIDOLD101512A_8778259-600x417.jpG";
+th.src = "RITEAIDOLD101512A_8778259-600x417.jpg";
 var count = 0;
 var number = 11;
 
