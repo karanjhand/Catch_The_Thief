@@ -84,7 +84,7 @@ bg.onload = function background() {
 			  alert("Finally you got him ");
 		  }
 		 if(caughtThief==true){
-				 document.getElementById("location").innerHTML="The thief is at the location  " + x +  "and " + y;
+				 document.getElementById("location").innerHTML="The thief is at the location  " + x +  " and " + y;
 				 document.getElementById("moves").innerHTML="moves : " + count;
 		 }else{
 				 document.getElementById("moves").innerHTML="moves : " + count;
